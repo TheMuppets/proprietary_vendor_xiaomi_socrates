@@ -663,6 +663,10 @@
         {
             "ApkFunctionType":"DisablePrivatePort",
             "ApkTable" :["com.instagram.android"]
+        },
+        {
+            "ApkFunctionType":"SetVideoStillToPreview",
+            "ApkTable" :["uz.kapitalbank.android"]
         }
     ]
     ,
