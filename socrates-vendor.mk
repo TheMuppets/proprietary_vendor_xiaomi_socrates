@@ -1829,10 +1829,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.xiaomi.hardware.bgservice@1.0-impl \
-    vendor.xiaomi.hardware.fx.tunnel@1.0 \
-    vendor.xiaomi.hardware.mfidoca@1.0 \
     vendor.xiaomi.hardware.mrm-V1-ndk_platform \
-    vendor.xiaomi.hardware.mtdservice@1.3 \
     vendor.xiaomi.hardware.otrpagent@2.0-impl \
     vendor.xiaomi.hardware.otrpagent@2.0 \
     vendor.xiaomi.hardware.tidaservice@1.0 \
