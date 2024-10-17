@@ -1454,17 +1454,42 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.sensor.citsensorservice@2.0 \
     capi_cirrus_sp \
     chre_qsh_shim \
+    libCalculator_skel \
     libDspIOProxy_skel \
     libQ6MSFR_manager_skel \
+    libQnnHtpV73 \
+    libQnnHtpV73Skel \
+    libQnnSaver \
+    libSnpeDspV65Skel \
+    libSnpeDspV66Skel \
+    libSnpeHtpV68Skel \
+    libSnpeHtpV69Skel \
+    libSnpeHtpV73Skel \
     libVppAisQnnHtp \
     libVppFrcQnnHtp \
+    libadsp_jpege_skel \
+    libapn_dsp_skel \
+    libarc_htp_driver_skel \
+    libbitml_nsp_skel \
+    libbitml_nsp_v2_skel \
+    libcalculator_skel \
     libdspCV_skel \
+    libdsp_streamer_binning \
     libdsp_streamer_qvrcam_receiver \
     libevadsp_3_0 \
     libeye_tracking_dsp_sample_skel \
     libfastcvadsp \
     libfastcvdsp_skel \
     libhalide_hexagon_remote_skel \
+    libhdr_cdsp_skel \
+    libhdr_skel \
+    libmctfengine_skel \
+    libmialgo_basic_cdsp_skel \
+    libmialgo_ldc_cdsp_skel \
+    libmialgo_mc_bokeh_cdsp_skel \
+    libmialgo_rawhdr_cdsp_skel \
+    libmialgo_rfs_cdsp_skel \
+    libmialgo_slow_motion_cdsp_skel \
     libmobilenet_dsp_frc \
     libmobilenet_dsp_frc_networks \
     libqvr_3dof_tracker_skel \
