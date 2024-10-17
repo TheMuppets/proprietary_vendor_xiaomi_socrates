@@ -14768,6 +14768,24 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "com.xiaomi.plugin.deflicker",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.deflicker.so"],
+			shared_libs: ["libcutils", "liblog", "libutils", "libcamera_metadata", "libcom.xiaomi.pluginutils", "libcom.xiaomi.metadatautils", "libcom.xiaomi.debug", "libcom.xiaomi.mawutilsold", "libui", "libceres", "libmpbase", "libdeflickerNM", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "camera/plugins",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "com.xiaomi.plugin.depurple",
 	owner: "xiaomi",
 	strip: {
@@ -14777,6 +14795,24 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.depurple.so"],
 			shared_libs: ["libcutils", "liblog", "libutils", "libcamera_metadata", "libcom.xiaomi.pluginutils", "libcom.xiaomi.metadatautils", "libcom.xiaomi.debug", "libalCFR", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "camera/plugins",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.xiaomi.plugin.frontbokeh",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.frontbokeh.so"],
+			shared_libs: ["libcutils", "liblog", "libutils", "libcamera_metadata", "libcom.xiaomi.pluginutils", "libcom.xiaomi.metadatautils", "libcom.xiaomi.debug", "libmialgo_aio_seg", "libmiphone_capture_bokeh_front", "libcamlog", "libutilscallstack", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -14867,6 +14903,24 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.miaideblur.so"],
 			shared_libs: ["libcutils", "liblog", "libutils", "libcamera_metadata", "libcom.xiaomi.pluginutils", "libcom.xiaomi.metadatautils", "libcom.xiaomi.debug", "libmiai_deblur", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	relative_install_path: "camera/plugins",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.xiaomi.plugin.miaiie",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/camera/plugins/com.xiaomi.plugin.miaiie.so"],
+			shared_libs: ["libcutils", "liblog", "libutils", "libcamera_metadata", "libcom.xiaomi.pluginutils", "libcom.xiaomi.metadatautils", "libcom.xiaomi.debug", "libmialgo_ie_capture", "libmialgo_utils", "libmialgoengine", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -18642,6 +18696,40 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/libxmi_high_dynamic_range.so"],
 			shared_libs: ["libm", "liblog", "libz", "libOpenCL", "libSNPE", "libc", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libxmi_slow_motion_mein",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libxmi_slow_motion_mein.so"],
+			shared_libs: ["libOpenCL", "liblog", "libcdsprpc", "libSNPE", "libmialgo_utils", "libm", "libdl", "libc", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libxmi_slow_motion_triger",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libxmi_slow_motion_triger.so"],
+			shared_libs: ["libOpenCL", "liblog", "libcdsprpc", "libSNPE", "libmialgo_utils", "libm", "libdl", "libc", ],
 		},
 	},
 	compile_multilib: "64",

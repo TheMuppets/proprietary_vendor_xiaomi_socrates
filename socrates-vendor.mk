@@ -1622,12 +1622,15 @@ PRODUCT_PACKAGES += \
     com.xiaomi.plugin.capbokeh \
     com.xiaomi.plugin.capdepth \
     com.xiaomi.plugin.caphdr \
+    com.xiaomi.plugin.deflicker \
     com.xiaomi.plugin.depurple \
+    com.xiaomi.plugin.frontbokeh \
     com.xiaomi.plugin.gpu \
     com.xiaomi.plugin.hdr \
     com.xiaomi.plugin.ldc \
     com.xiaomi.plugin.memcpy \
     com.xiaomi.plugin.miaideblur \
+    com.xiaomi.plugin.miaiie \
     com.xiaomi.plugin.miaiportraitsupernight \
     com.xiaomi.plugin.mialgosnsc \
     com.xiaomi.plugin.offlinepostproc \
@@ -1849,6 +1852,8 @@ PRODUCT_PACKAGES += \
     libwvkeybox \
     libxmi_hdr_checker \
     libxmi_high_dynamic_range \
+    libxmi_slow_motion_mein \
+    libxmi_slow_motion_triger \
     nfc_nci.nqx.default.hw \
     sensors.touch.detect \
     vendor.qti.hardware.camera.aon-service-impl \
