@@ -35,6 +35,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/socrates/proprietary/odm/etc/camera/CFR_para_UW_V01_SN.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/CFR_para_UW_V01_SN.bin \
     vendor/xiaomi/socrates/proprietary/odm/etc/camera/GpuKernelRepo.pb:$(TARGET_COPY_OUT_ODM)/etc/camera/GpuKernelRepo.pb \
     vendor/xiaomi/socrates/proprietary/odm/etc/camera/MobNetv2TF_0.35_iter200000_zoom2.5x_h1500w2000.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/MobNetv2TF_0.35_iter200000_zoom2.5x_h1500w2000.dlc \
+    vendor/xiaomi/socrates/proprietary/odm/etc/camera/altekldc_packdata_0x01.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/altekldc_packdata_0x01.bin \
+    vendor/xiaomi/socrates/proprietary/odm/etc/camera/altekldc_segmodel.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/altekldc_segmodel.bin \
+    vendor/xiaomi/socrates/proprietary/odm/etc/camera/altekldc_tuningdata.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/altekldc_tuningdata.bin \
+    vendor/xiaomi/socrates/proprietary/odm/etc/camera/altekldc_tuningdata_ai.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/altekldc_tuningdata_ai.bin \
     vendor/xiaomi/socrates/proprietary/odm/etc/camera/anc_1080p.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/anc_1080p.bin \
     vendor/xiaomi/socrates/proprietary/odm/etc/camera/anc_4k.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/anc_4k.bin \
     vendor/xiaomi/socrates/proprietary/odm/etc/camera/arcsat_2sat.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/arcsat_2sat.bin \
