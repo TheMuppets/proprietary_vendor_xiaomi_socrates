@@ -81,6 +81,9 @@ on init
     chmod 0666 /dev/cpuctl/background/cpu.shares
     chmod 0666 /dev/cpuctl/top-app/cpu.shares
 
+    # Initial uhid
+    chmod 0666 /dev/uhid
+
 on early-fs
     start vold
 
@@ -580,3 +583,17 @@ service fan_control_turn_off /vendor/bin/fan_service 0
     user root
     disabled
     oneshot
+
+service mi-serial-sh /odm/bin/init.mi.serial.sh
+    class late_start
+    user root
+    group root system radio
+    disabled
+    oneshot
+
+on post-fs && property:ro.product.device=sheng
+    start mi-serial-sh
+on property:ro.product.device=sheng && property:ro.vendor.ril.oem.sno=*
+    setprop ro.ril.oem.sno ${ro.vendor.ril.oem.sno}
+on property:ro.product.device=sheng && property:ro.vendor.ril.oem.psno=*
+    setprop ro.ril.oem.psno ${ro.vendor.ril.oem.psno}

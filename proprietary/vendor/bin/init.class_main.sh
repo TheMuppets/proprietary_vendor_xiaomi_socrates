@@ -37,7 +37,8 @@ low_ram=`getprop ro.config.low_ram`
 
 case "$baseband" in
     "apq" | "sda" | "qcs" )
-    setprop ro.vendor.radio.noril yes
+#   setprop ro.vendor.radio.noril yes
+    setprop ro.vendor.radio.noril true
     stop vendor.ril-daemon
     stop vendor.qcrild
     stop vendor.qcrild2

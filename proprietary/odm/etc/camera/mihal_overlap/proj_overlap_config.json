@@ -96,8 +96,8 @@
             "note" : ""
         },
         {
-            "width" : 2240,
-            "height" : 1008,
+            "width" : 2280,
+            "height" : 1026,
             "note" : "20:9 Front ov16a1q"
         },
         {
@@ -241,6 +241,11 @@
             "width" : 2560,
             "height" : 1152,
             "note" : "1x Bokeh Slave 20:9"
+        },
+        {
+            "width" : 2240,
+            "height" : 1008,
+            "note" : "20:9 Front ov16a1q"
         },
         {
             "width" : 1200,

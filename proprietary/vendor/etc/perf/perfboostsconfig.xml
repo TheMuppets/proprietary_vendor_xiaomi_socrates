@@ -222,13 +222,13 @@
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
                        0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF, 0x41848000, 0x104410,
                        0x41844000, 0x104410, 0x40400000, 0x1, 0x42C10000, 0x1, 0x43488000, 0x401640,
-                       0x43458000, 0x193138, 0x4281C000, 2000" />
+                       0x43458000, 0x193138, 0x4281C000, 2000, 0x5FC00000, 0x7f01" />
         <Config
             Id="0x00001082" Type="2" Enable="true" Timeout="400" Target="kalama"
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
                        0x40800000, 1401, 0x40800100, 1228, 0x40800200, 1593, 0x41818000, 0x104410,
                        0x41844000, 0x104410, 0x40400000, 0x1, 0x42C10000, 0x1, 0x43488000, 0x401640,
-                       0x43458000, 0x193138, 0x4281C000, 2000" />
+                       0x43458000, 0x193138, 0x4281C000, 2000, 0x5FC00000, 0x7f01" />
 
     <!--Animation boost -->
         <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
@@ -286,8 +286,9 @@
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="kalama" Fps="144"
             Resources="0x4303C000, 0xA6428, 0x4080C000, 1300000, 0x4080C100, 1200000, 0x4080C200, 1300000,
+                       0x40800000, 1300, 0x40800100, 1100, 0x40800200, 1300,
                        0x40C00000, 0x2, 0x43458000, 0x114900, 0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 1,
+                       0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 1,0x4280C000, 475,
                        0x40CE0200, 0x0023000A, 0x40808000, 600000, 0x40808100, 1100000, 0x40808200, 800000, 0x5FC00000, 0x701" />
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="kalama" Fps="180"
@@ -301,6 +302,31 @@
                        0x40C00000, 0x2, 0x43458000, 0x114900, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 1,
                        0x40CE0200, 0x0023000A, 0x40808000, 600000, 0x40808100, 1100000, 0x40808200, 800000, 0x5FC00000, 0x701" />
+
+    <!--Horizontal Scroll boost-->
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
+
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="kalama" Fps="60"
+            Resources="0x4303C000, 0xA6428, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
+                       0x40C00000, 0x2, 0x43458000, 0xD2F00, 0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0x41000000, 3, 0x5FC00000, 0, 0x5FC00000, 0x7f01" />
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="kalama" Fps="90"
+            Resources="0x4303C000, 0xA6428, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
+                       0x40C00000, 0x2, 0x43458000, 0xD2F00, 0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0x41000000, 3, 0x5FC00000, 0, 0x5FC00000, 0x7f01" />
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="kalama" Fps="144"
+            Resources="0x4303C000, 0xA6428, 0x40800000, 1300, 0x40800100, 1100, 0x40800200, 1300,
+                       0x40C00000, 0x2, 0x43458000, 0x114900, 0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 1, 0x4280C000, 475,
+                       0x40CE0200, 0x0023000A, 0x5FC00000, 0, 0x5FC00000, 0x7f01" />
 
     <!--Prefling Scroll boost-->
         <!-- LLCC_DDR_BW_MIN_FREQ_V2 resource opcode, value-->
@@ -346,8 +372,9 @@
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="kalama" Fps="144"
             Resources="0x4303C000, 0xA6428, 0x4080C000, 1300000, 0x4080C100, 1200000, 0x4080C200, 1300000,
+                       0x40800000, 1300, 0x40800100, 1100, 0x40800200, 1300,
                        0x40C00000, 0x2, 0x43458000, 0x114900, 0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 1,
+                       0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 1, 0x4280C000, 475,
                        0x40CE0200, 0x0023000A, 0x40808000, 600000, 0x40808100, 1100000, 0x40808200, 800000" />
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="kalama" Fps="180"
@@ -420,7 +447,7 @@
             Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="kalama" Fps="144"
             Resources="0x4303C000, 0x858B8, 0x4080C000, 1300000, 0x4080C100, 1200000, 0x4080C200, 1300000,
                        0x40C00000, 0x2, 0x43458000, 0x114900, 0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 1,
+                       0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 1, 0x4280C000, 475,
 		       0x40CE0200, 0x0023000A, 0x40808000, 600000, 0x40808100, 1100000, 0x40808200, 800000" />
         <Config
             Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="kalama" Fps="180"

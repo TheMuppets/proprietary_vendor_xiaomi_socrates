@@ -891,6 +891,9 @@
         <!-- P CPU - Disable Core Control -->
         <!-- MPCTLV3_XIAOMI_KSWAPD_AFFINITY(0x5FC00000), 0x7F01 -->
         <!-- MPCTLV3_XIAOMI_KCOMPACTD_AFFINITY(0x5FCF0000), 0x7F -->
+        <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100), 0x459 -->
+        <!-- MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0(0x40804000), 1785 -->
+        <!-- MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0(0x40804200), 2092  -->
         <Config
             Id="0x00001346" Type="0" Enable="true" Timeout="0" Target="kalama"
             Resources="
@@ -906,7 +909,10 @@
             0x41008100, 0,
             0x41008200, 0,
             0x5FC00000, 0x7F01,
-            0x5FCF0000, 0x7F
+            0x5FCF0000, 0x7F,
+            0x40804100, 0x459,
+            0x40804000, 1785,
+            0x40804200, 2092
             "/>
 
         <!-- camera FHD 30FPS RECORDING tunings -->
@@ -928,6 +934,8 @@
         <!-- P CPU - Disable Core Control -->
         <!-- MPCTLV3_XIAOMI_KSWAPD_AFFINITY(0x5FC00000), 0x7F01 -->
         <!-- MPCTLV3_XIAOMI_KCOMPACTD_AFFINITY(0x5FCF0000), 0x7F -->
+        <!-- MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0(0x40804000), 1785 -->
+        <!-- MPCTLV3_MAX_FREQ_CLUSTER_PRIME_CORE_0(0x40804200), 2092  -->
         <Config
             Id="0x00001347" Type="0" Enable="true" Timeout="0" Target="kalama"
             Resources="
@@ -948,7 +956,9 @@
             0x41008100, 0,
             0x41008200, 0,
             0x5FC00000, 0x7F01,
-            0x5FCF0000, 0x7F
+            0x5FCF0000, 0x7F,
+            0x40804000, 1785,
+            0x40804200, 2092
             "/>
 
         <!-- camera UHD 30FPS RECORDING tunings -->
@@ -1220,6 +1230,9 @@
         <!-- P CPU - Disable Core Control -->
         <!-- MPCTLV3_XIAOMI_KSWAPD_AFFINITY(0x5FC00000), 0x7F01 -->
         <!-- MPCTLV3_XIAOMI_KCOMPACTD_AFFINITY(0x5FCF0000), 0x7F -->
+        <!-- MPCTLV3_TARGET_LOAD_THRESH_CLUSTER_BIG    256-->
+        <!-- MPCTLV3_TARGET_LOAD_THRESH_CLUSTER_LITTLE 256 -->
+        <!-- MPCTLV3_TARGET_LOAD_THRESH_CLUSTER_PRIME  256 -->
         <Config
             Id="0x00001355" Type="0" Enable="true" Timeout="0" Target="kalama"
             Resources="
@@ -1240,7 +1253,10 @@
             0x41008100, 0,
             0x41008200, 0,
             0x5FC00000, 0x7F01,
-            0x5FCF0000, 0x7F
+            0x5FCF0000, 0x7F,
+            0x41450000, 256,
+            0x41450100, 256,
+            0x41450200, 256
             "/>
 
         <!-- camera FRONT FHD 60FPS RECORDING tunings -->
@@ -1687,6 +1703,7 @@
 
         <!--camera MIFACE REGISTRATION mode tunings-->
         <!--MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, 1651  -->
+        <!--MPCTLV3_MAX_FREQ_CLUSTER_PLUS_CORE_0_CORE_0, 1843  -->
         <!--CPU-LLC BWMON - Set sample_ms 33 -->
         <!--CPU-LLC BWMON - Set io_percent 100 -->
         <!--CPU-LLC BWMON - Set hyst_length hist memory 0 -->
@@ -1707,6 +1724,7 @@
             Id="0x0000136B" Type="0" Enable="true" Timeout="0" Target="kalama"
             Resources="
             0x40800000, 0x673,
+            0x40804200, 1843,
             0x4183C000, 0x21,
             0x41834000, 0x64,
             0x41838000, 0,
@@ -1723,6 +1741,38 @@
             0x41008000, 0,
             0x41008100, 0,
             0x41008200, 0
+            "/>
+
+        <!-- camera night snapshot tunings -->
+        <!-- MPCTLV3_ALL_CPUS_PWR_CLPS_DIS, 0x1 -->
+        <!-- MPCTLV3_SCHED_BOOST(0x40C00000), 0x1 -->
+        <!-- MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100), 0xFFF -->
+        <!-- MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100), 0xFFF -->
+        <!-- MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0(0x40804000), 0xFFF -->
+        <!-- MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0 (0x40800000), 0xFFF -->
+        <!-- MPCTLV3_MAX_FREQ_CLUSTER_PLUS_CORE_0(0x40804200), 0xFFF -->
+        <!-- MPCTLV3_MIN_FREQ_CLUSTER_PLUS_CORE_0(0x40800200), 0xFFF -->
+        <!-- MPCTLV3_XIAOMI_KSWAPD_AFFINITY(0x5FC00000), 0x7F01 -->
+        <!-- MPCTLV3_XIAOMI_KCOMPACTD_AFFINITY(0x5FCF0000), 0x7F -->
+        <!-- MPCTLV3_BUS_DCVS_LLCC_DDR_BOOST_FREQ, 4224000 -->
+        <!-- MPCTLV3_BUS_DCVS_LLCC_L3_BOOST_FREQ, 1804000 -->
+        <!-- MPCTLV3_BUS_DCVS_LLCC_LLCC_BOOST_FREQ, 1066000 -->
+        <Config
+            Id="0x0000136C" Type="0" Enable="true" Timeout="0" Target="kalama"
+            Resources="
+            0x40400000, 0x1,
+            0x40C00000, 0x1,
+            0x40804100, 1785,
+            0x40800100, 1785,
+            0x40804000, 2457,
+            0x40800000, 1785,
+            0x40804200, 2726,
+            0x40800200, 1843,
+            0x5FC00000, 0x7F01,
+            0x5FCF0000, 0x7F,
+            0x43498000, 4224000,
+            0x4349C000, 1804000,
+            0x434A0000, 1066000
             "/>
 
         <!-- decode 240 fps tunings -->

@@ -12,6 +12,7 @@
         },
     "support": {
             "inhibit_3rdprocs_enable": true,
+            "3rdcam_boost_enable": false,
             "oom_update_support": true,
             "cam_boost_early_enable": true,
             "perceptible_support": true,

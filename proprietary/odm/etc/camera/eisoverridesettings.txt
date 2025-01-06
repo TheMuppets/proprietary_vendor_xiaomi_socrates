@@ -7,3 +7,4 @@ EISv3DisableOIS=0
 EISv2DisableOIS=0
 EISv2DisableAccel=1
 EISv3DisableAccel=1
+EISEnableGyroTimeout=1

@@ -46,7 +46,7 @@
             // create a new thread to execute vpp start
             // if set to a positive integer like 2000, mian thread will wait for vpp start at most 2s
             // if set to 0, just execute vpp start in main thread.
-            "vpp_max_retry_vpp_start_timeout": 0
+            "vpp_max_retry_vpp_start_timeout": 2500
         },
 
         // "DolbyVision": {

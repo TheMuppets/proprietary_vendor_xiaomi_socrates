@@ -61,25 +61,25 @@
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="kalama" Fps="60"
             Resources="0x4303C000, 0xA6428, 0x40800000, 1651, 0x40800100, 1516, 0x40800200, 1766,
-                       0x40C00000, 2, 0x40C74000, 0xFF, 0x40408000, 0x63"
+                       0x40C00000, 2, 0x40C74000, 0xFF, 0x40408000, 0x63, 0x5FC00000, 0x7f01"
             Applist="com.miui.home, com.zhihu.android"/>
 
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="kalama" Fps="90"
             Resources="0x4303C000, 0xA6428, 0x40800000, 1651, 0x40800100, 1516, 0x40800200, 1766,
-                       0x40C00000, 2, 0x40C74000, 0xFF, 0x40408000, 0x63"
+                       0x40C00000, 2, 0x40C74000, 0xFF, 0x40408000, 0x63, 0x5FC00000, 0x7f01"
             Applist="com.miui.home, com.zhihu.android"/>
 
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="kalama" Fps="120"
             Resources="0x4303C000, 0xA6428, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
-                       0x40C00000, 2, 0x40C74000, 0xFF, 0x40408000, 0x63"
+                       0x40C00000, 2, 0x40C74000, 0xFF, 0x40408000, 0x63, 0x5FC00000, 0x7f01"
             Applist="com.miui.home, com.zhihu.android"/>
 
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="kalama" Fps="144"
             Resources="0x4303C000, 0xA6428, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
-                       0x40C00000, 2, 0x40C74000, 0xFF, 0x40408000, 0x63"
+                       0x40C00000, 2, 0x40C74000, 0xFF, 0x40408000, 0x63, 0x5FC00000, 0x7f01"
             Applist="com.miui.home, com.zhihu.android"/>
 
     <!--Vertical Scroll boost-->

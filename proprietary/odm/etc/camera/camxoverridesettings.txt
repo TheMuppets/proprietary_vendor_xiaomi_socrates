@@ -117,6 +117,7 @@ enableSpectralSensor=1
 #flicker
 enableFlicker=TRUE
 enableFlickerCCT=FALSE
+enableFlickerColor=FALSE
 
 #supernight
 #https://xiaomi.f.mioffice.cn/sheets/shtk4rNloLn27Kka49Pv4kfbadu?sheet=4cGUqf

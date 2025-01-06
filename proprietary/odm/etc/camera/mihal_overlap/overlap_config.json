@@ -661,6 +661,11 @@
                         "com.tencent.mm"]
         },
         {
+            "ApkFunctionType":"ForVideoLiveReduceFPS",
+            "ApkTable" :["air.tv.douyu.android",
+                         "com.duowan.kiwi"]
+        },
+        {
             "ApkFunctionType":"DisablePrivatePort",
             "ApkTable" :["com.instagram.android"]
         },
