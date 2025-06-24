@@ -1,4 +1,0 @@
-service vendor.modemManager /vendor/bin/modemManager
-    class main
-    user radio
-    group radio
