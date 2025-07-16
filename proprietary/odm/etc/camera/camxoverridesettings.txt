@@ -333,3 +333,6 @@ traceGroupsEnable=0x10000000000100c0
 
 # EEPROM
 enableEEPROMBackup=TRUE
+
+## OIS
+isTeleOisSupported=TRUE
