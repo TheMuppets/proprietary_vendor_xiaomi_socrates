@@ -330,59 +330,59 @@ PRODUCT_PACKAGES += \
     libthreadutils \
     vendor.qti.hardware.qxr-V1-ndk \
     vendor.xiaomi.hardware.bgservice@1.0 \
-    capi_cirrus_sp \
-    chre_qsh_shim \
-    libCalculator_skel \
-    libDspIOProxy_skel \
-    libQ6MSFR_manager_skel \
-    libQnnHtpV73 \
-    libQnnHtpV73Skel \
-    libQnnSaver \
-    libSnpeDspV65Skel \
-    libSnpeDspV66Skel \
-    libSnpeHtpV68Skel \
-    libSnpeHtpV69Skel \
-    libSnpeHtpV73Skel \
-    libVppAisQnnHtp \
-    libVppFrcQnnHtp \
-    libadsp_jpege_skel \
-    libapn_dsp_skel \
-    libarc_htp_driver_skel \
-    libbitml_nsp_skel \
-    libbitml_nsp_v2_skel \
-    libcalculator_skel \
-    libdspCV_skel \
-    libdsp_streamer_binning \
-    libdsp_streamer_qvrcam_receiver \
-    libevadsp_3_0 \
-    libeye_tracking_dsp_sample_skel \
-    libfastcvadsp \
-    libfastcvdsp_skel \
-    libhalide_hexagon_remote_skel \
-    libhdr_cdsp_skel \
-    libhdr_skel \
-    libmctfengine_skel \
-    libmialgo_basic_cdsp_skel \
-    libmialgo_ldc_cdsp_skel \
-    libmialgo_mc_bokeh_cdsp_skel \
-    libmialgo_rawhdr_cdsp_skel \
-    libmialgo_rfs_cdsp_skel \
-    libmialgo_slow_motion_cdsp_skel \
-    libmobilenet_dsp_frc \
-    libmobilenet_dsp_frc_networks \
-    libqvr_3dof_tracker_skel \
-    libqvr_cam_dsp_driver_skel \
-    libqvr_dsp_driver_skel \
-    libscveObjectSegmentation_skel \
-    libscveT2T_skel \
-    libtracker_6dof_skel_8450 \
-    libvpp_ais \
-    libvpp_ais_networks \
-    libvpp_frc \
-    libvpp_svc_skel \
-    libvpp_vqa_networks \
-    nearby.napp_header \
-    nearby \
+    vendor_lib_rfsa_adsp_capi_cirrus_sp_so \
+    vendor_lib_rfsa_adsp_chre_qsh_shim_so \
+    vendor_lib_rfsa_adsp_libCalculator_skel_so \
+    vendor_lib_rfsa_adsp_libDspIOProxy_skel_so \
+    vendor_lib_rfsa_adsp_libQ6MSFR_manager_skel_so \
+    vendor_lib_rfsa_adsp_libQnnHtpV73_so \
+    vendor_lib_rfsa_adsp_libQnnHtpV73Skel_so \
+    vendor_lib_rfsa_adsp_libQnnSaver_so \
+    vendor_lib_rfsa_adsp_libSnpeDspV65Skel_so \
+    vendor_lib_rfsa_adsp_libSnpeDspV66Skel_so \
+    vendor_lib_rfsa_adsp_libSnpeHtpV68Skel_so \
+    vendor_lib_rfsa_adsp_libSnpeHtpV69Skel_so \
+    vendor_lib_rfsa_adsp_libSnpeHtpV73Skel_so \
+    vendor_lib_rfsa_adsp_libVppAisQnnHtp_so \
+    vendor_lib_rfsa_adsp_libVppFrcQnnHtp_so \
+    vendor_lib_rfsa_adsp_libadsp_jpege_skel_so \
+    vendor_lib_rfsa_adsp_libapn_dsp_skel_so \
+    vendor_lib_rfsa_adsp_libarc_htp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_skel_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_v2_skel_so \
+    vendor_lib_rfsa_adsp_libcalculator_skel_so \
+    vendor_lib_rfsa_adsp_libdspCV_skel_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_binning_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_qvrcam_receiver_so \
+    vendor_lib_rfsa_adsp_libevadsp_3_0_so \
+    vendor_lib_rfsa_adsp_libeye_tracking_dsp_sample_skel_so \
+    vendor_lib_rfsa_adsp_libfastcvadsp_so \
+    vendor_lib_rfsa_adsp_libfastcvdsp_skel_so \
+    vendor_lib_rfsa_adsp_libhalide_hexagon_remote_skel_so \
+    vendor_lib_rfsa_adsp_libhdr_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libhdr_skel_so \
+    vendor_lib_rfsa_adsp_libmctfengine_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_basic_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_ldc_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_mc_bokeh_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_rawhdr_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_rfs_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmialgo_slow_motion_cdsp_skel_so \
+    vendor_lib_rfsa_adsp_libmobilenet_dsp_frc_so \
+    vendor_lib_rfsa_adsp_libmobilenet_dsp_frc_networks_so \
+    vendor_lib_rfsa_adsp_libqvr_3dof_tracker_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_cam_dsp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_dsp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libscveObjectSegmentation_skel_so \
+    vendor_lib_rfsa_adsp_libscveT2T_skel_so \
+    vendor_lib_rfsa_adsp_libtracker_6dof_skel_8450_so \
+    vendor_lib_rfsa_adsp_libvpp_ais_so \
+    vendor_lib_rfsa_adsp_libvpp_ais_networks_so \
+    vendor_lib_rfsa_adsp_libvpp_frc_so \
+    vendor_lib_rfsa_adsp_libvpp_svc_skel_so \
+    vendor_lib_rfsa_adsp_libvpp_vqa_networks_so \
+    vendor_lib_rfsa_adsp_nearby_napp_header \
+    vendor_lib_rfsa_adsp_nearby_so \
     com.qti.actuator.socrates_semco_imx800_dw9825a_wide_actuator \
     com.qti.eeprom.socrates_ofilm_ov08d10_p24c64f_ultra_eeprom \
     com.qti.eeprom.socrates_ofilm_ov16a1q_gt24p64e_front_eeprom \
@@ -709,6 +709,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.xiaomi.hardware.bgservice@1.0-impl \
-    libarcsoft_beauty_hvx_skel \
-    libmialgo_night_align_cdsp_skel \
+    odm_lib_rfsa_adsp_libarcsoft_beauty_hvx_skel_so \
+    odm_lib_rfsa_adsp_libmialgo_night_align_cdsp_skel_so \
     vendor.qti.camera.provider-service_64
