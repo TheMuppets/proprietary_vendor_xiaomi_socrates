@@ -24,7 +24,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/socrates/proprietary/odm/etc/camera/beauty_config_gl.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty_config_gl.json \
     vendor/xiaomi/socrates/proprietary/odm/etc/camera/beauty_style_nude.cng:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty_style_nude.cng \
     vendor/xiaomi/socrates/proprietary/odm/etc/camera/bokehParams.json:$(TARGET_COPY_OUT_ODM)/etc/camera/bokehParams.json \
-    vendor/xiaomi/socrates/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
+    vendor/xiaomi/socrates/proprietary/odm/etc/camera/cameradfx_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameradfx_config.json \
+    vendor/xiaomi/socrates/proprietary/odm/etc/camera/cameraopt_reclaim.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt_reclaim.json \
     vendor/xiaomi/socrates/proprietary/odm/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/camxoverridesettings.txt \
     vendor/xiaomi/socrates/proprietary/odm/etc/camera/com.xiaomi.dcal.wu.data:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.wu.data \
     vendor/xiaomi/socrates/proprietary/odm/etc/camera/com.xiaomi.dcal.wu.golden:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.wu.golden \
@@ -544,6 +545,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.mcx.policy.mfl \
     com.qualcomm.mcx.policy.xr \
     com.qualcomm.qti.mcx.usecase.extension \
+    com.xiaomi.camdfx \
     com.xiaomi.camhal.overlap \
     com.xiaomi.camhal.submodel.camxfrag \
     com.xiaomi.camhal.submodel.chifrag \
@@ -555,7 +557,7 @@ PRODUCT_PACKAGES += \
     libAF \
     libHISCppAlgos \
     libMiMotion \
-    libMiVideoFilter \
+    libMiPhotoFilter \
     libTrueSight \
     libXMFaceFocus \
     libaachaptics \
@@ -618,6 +620,7 @@ PRODUCT_PACKAGES += \
     libcom.xiaomi.mawutilsold \
     libcom.xiaomi.metadatautils \
     libcom.xiaomi.pluginutils \
+    libcom.xiaomi.providercallback \
     libcommonchiutils \
     libdeflicker \
     libdualcam_optical_zoom_control \

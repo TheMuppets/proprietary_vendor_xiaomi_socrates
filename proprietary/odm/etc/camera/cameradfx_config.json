@@ -1,0 +1,49 @@
+{
+    "SENSORNAME_ROLEID_MAP":[
+        {
+            "sensorName": "socrates_semco_imx800_wide",
+            "roleID": 0
+        },
+        {
+            "sensorName": "socrates_semco_imx800_p24c256f_wide_eeprom",
+            "roleID": 0
+        },
+        {
+            "sensorName": "socrates_semco_imx800_dw9825a_wide_actuator",
+            "roleID": 0
+        },
+        {
+            "sensorName": "socrates_wide_ak7323_ois",
+            "roleID": 0
+        },
+        {
+            "sensorName": "socrates_ofilm_ov16a1q_front",
+            "roleID": 1
+        },
+        {
+            "sensorName": "socrates_ofilm_ov16a1q_gt24p64e_front_eeprom",
+            "roleID": 1
+        },
+        {
+            "sensorName": "socrates_ofilm_ov08d10_ultra",
+            "roleID": 21
+        },
+        {
+            "sensorName": "socrates_ofilm_ov08d10_p24c64f_ultra_eeprom",
+            "roleID": 21
+        },
+        {
+            "sensorName": "socrates_sunny_ov02b10_macro",
+            "roleID": 22
+        },
+        {
+            "sensorName": "socrates_sunny_ov02b10_gt24p64e_macro_eeprom",
+            "roleID": 22
+        }
+    ],
+
+    "TOMBSTONE_FUNCTION":{
+        "isEnable": true,
+        "fileNumber": 20
+    }
+}

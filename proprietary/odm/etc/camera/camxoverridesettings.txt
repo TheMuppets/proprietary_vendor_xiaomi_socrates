@@ -62,6 +62,7 @@ BokehSlaveMfnrEnable=FALSE
 bokehVendorID=1
 singlebokehvendorid=0x82
 bokehRelightVerion=2
+SDK_LOG_LEVEL=4
 
 # portrait repair
 #Bit[0] - UI SAT support default not support
@@ -71,6 +72,15 @@ bokehRelightVerion=2
 #Bit[4] - UI SuperNight support default not support
 #Bit[5] - algo SuperNight support default on
 isPortraitRepairSupportMask=0x26
+
+# 12G portrait repair
+#Bit[0] - UI SAT support default not support
+#Bit[1] - algo SAT support default on
+#Bit[2] - UI Bokeh support default not support
+#Bit[3] - algo Bokeh support default on
+#Bit[4] - UI SuperNight support default not support
+#Bit[5] - algo SuperNight support default on
+isLargeRamPortraitRepairSupportMask=0x2e
 
 #For stability
 enableSignal35Tombstone=FALSE
@@ -104,6 +114,14 @@ isFrontVHdrSupported=TRUE
 enableSFEAlignment=TRUE
 #SHDR =1 ; MFHDR =2
 VideoHDRPreferredMode=2
+
+# 00000001 rear default enable
+# 00000010 front default enable
+# 00000100 rear support flash
+# 00001000 front support flash
+# 00010000 needed remove rear HDR icon
+# 00100000 needed remove front HDR icon
+VideoHDRSupportFeature=4
 
 #Video EIS
 iseispreviewSupported=TRUE
@@ -336,3 +354,6 @@ enableEEPROMBackup=TRUE
 
 ## OIS
 isTeleOisSupported=TRUE
+
+LoadTuningDataManagerAsync=TRUE
+sensorModuleNumber=4
